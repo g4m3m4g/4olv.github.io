@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sawasdee kub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <p>proof! if you are real Olivia</p>
+        <form action="page1.html" method="post" onsubmit="return validateForm()">
+            <input type="text" id="username" name="username" placeholder="Game's Roblox username" >
+            <br>
+            <input type="text" id="password" name="password" placeholder="Game's Birthdate (ex.10/01/07)" >
+            <br>
+            <input type="submit" value="open">
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if username and password are correct
+            if (username === "gimmesumsig" && password === "19/04/04") {
+                return true; // Allow form submission
+            } else {
+                alert("bruh you're fake Olivia");
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+
+
+</body>
+</html>

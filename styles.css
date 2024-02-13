@@ -1,0 +1,72 @@
+@font-face {
+    font-family:Cheflat ;
+    src: url(/fonts/Cheflat.ttf) format('truetype'),
+         url(/fonts/Cheflat.otf) format('truetype'),
+    ;
+}
+body {
+    
+    font-family: Cheflat, sans-serif;
+    background-color: #FFF3CF; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.login-container {
+    
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h2 {
+    
+    
+    margin-bottom: 20px;
+}
+
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    font-family: Cheflat, sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.login-container input[type="submit"] {
+    font-family: Cheflat, sans-serif;
+    width: 100%;
+    background-color: #E8C872;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #C9D7DD;
+}
+
+
+/* Media query for smaller screens */
+@media screen and (min-width: 760px) {
+    .login-container {
+        width: fit-content;
+        display: flex; /* Adjust container width for smaller screens */
+    }
+}
